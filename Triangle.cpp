@@ -29,6 +29,7 @@ void Triangle::setHeight(int newHeight){ //mutator function
 }
 
 int Triangle::getWidth() { //accessor function
+    width = height*2-1;
     return width;
 }
 
@@ -54,6 +55,22 @@ void Triangle::draw() {
             else                        //of the matrice while the rest of the spaces in the matrice are filled
                 cout << " ";            //with empty spaces to form the pyramid shape the triangle has.
         }
+        cout << endl;
+    }
+}
+
+void Triangle::exDraw() {
+    cout << "Drawing Triangle...\n";
+    cout << "Height: " << getHeight() << endl;
+    cout << "Width: " << getWidth() << "\n(Note: for this to work, width = height * 2 - 1)" << endl;
+    cout << "Displaying Triangle: \n";
+    for (int i = 1; i <= height; i++){
+        for (int j = 1; j <= width; j++)
+            if (j >= height - (i - 1) && j <= height + (i - 1)){
+                cout << "*";
+            }
+        else
+            cout << " ";
         cout << endl;
     }
 }

@@ -13,7 +13,8 @@ public:
     void setWidth(int newWidth);
     void setHeight(int newHeight);
     virtual int getArea();
-    virtual void draw() = 0;
+    virtual void draw() = 0; //user input
+    virtual void exDraw() = 0;
 protected:
     int width = 0;
     int height = 0;

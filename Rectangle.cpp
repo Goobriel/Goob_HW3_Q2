@@ -58,6 +58,19 @@ void Rectangle::draw() {
 
 }
 
+void Rectangle::exDraw() {
+    cout << "Drawing Rectangle...\n";
+    cout << "Height: " << getHeight() << endl;
+    cout << "Width: " << getWidth() << endl;
+    cout << "Displaying Rectangle: \n";
+    for (int i = 1; i <= height; i++){
+        for (int j = 1; j <= width; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
 void Rectangle::displayArea() {
     cout << "Area of Rectangle: " << getArea() << endl;
 }

@@ -33,10 +33,14 @@ void Polygon::setHeight(int newHeight){
 }
 
 int Polygon::getArea() {
-    width = height*2-1;
+    width = height;
     return width * height;
 }
 
-void Polygon::draw() {
+void Polygon::draw() { //Takes in keyboard input
     cout << "BEep boop,wee woo wee woo... WEE WOO WEE WOO" << endl;
+}
+
+void Polygon::exDraw() { //User defined input
+    cout << "Beep beep boop boop, boop bwap" << endl;
 }

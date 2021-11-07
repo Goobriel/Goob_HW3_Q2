@@ -16,6 +16,7 @@ public:
     int getHeight();
     int getArea();
     void draw();
+    void exDraw();
     void displayArea();
 private:
 
